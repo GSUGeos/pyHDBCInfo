@@ -1,5 +1,4 @@
 import cv2 #Read image / camera/video input
-from tabulate import tabulate
 from pyzbar.pyzbar import decode
 import sys
 import csv
