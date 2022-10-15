@@ -59,7 +59,7 @@ public class gui_barcode {
 		JLabel t = new JLabel("                                                   ");
 		JLabel t1 = new JLabel("                                                  ");
 		JLabel t2 = new JLabel("                                                                           ");
-		JLabel t3 = new JLabel("                                                                                                       ");
+		JLabel t3 = new JLabel("                                                                                             ");
 		JLabel text2 = new JLabel("Enter Model No: ");
 
 		frame.setLayout(new FlowLayout(FlowLayout.LEFT));
