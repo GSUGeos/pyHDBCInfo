@@ -168,6 +168,7 @@ public class gui_barcode {
 		frame.add(but2);
 		but2.addActionListener(new ButtonListener());
 		frame.setSize(500,350);
+		frame.setResizable(false);
 		frame.setVisible(true); 
 
 	}
