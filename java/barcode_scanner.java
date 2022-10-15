@@ -147,7 +147,7 @@ public class gui_barcode {
 		FileWriter writer;
 		try {
 			
-			writer = new FileWriter("C:/Users/mnasir3/eclipse-workspace/hello_java/src/src/hardrive.csv", true);
+			writer = new FileWriter("hard_drive.csv", true); //add your own path here
 			BufferedWriter buffer = new BufferedWriter(writer);  
 			buffer.write(a+", ");
 			buffer.write(b+", ");
@@ -156,7 +156,7 @@ public class gui_barcode {
 			buffer.newLine();
 			buffer.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e);
 		} 
 	}
 
