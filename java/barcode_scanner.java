@@ -1,3 +1,5 @@
+package src;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -59,7 +61,7 @@ public class gui_barcode {
 		JLabel t = new JLabel("                                                   ");
 		JLabel t1 = new JLabel("                                                  ");
 		JLabel t2 = new JLabel("                                                                           ");
-		JLabel t3 = new JLabel("                                                                                             ");
+		JLabel t3 = new JLabel("                                                                                                       ");
 		JLabel text2 = new JLabel("Enter Model No: ");
 
 		frame.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -113,18 +115,18 @@ public class gui_barcode {
 
 			a = (String) drop.getSelectedItem();
 
-			b = (String) modl_no.getText();
-
-			c = (String) serialNo.getText();
-
-			d = (String) enter_size.getText();
+			b = (String) serialNo.getText();
 			
+			c = (String) modl_no.getText();
+	
+			d = (String) enter_size.getText();
+
 			f = (String) sz2.getSelectedItem();
 
 			if(e.getSource() == but) {
 				mnf.setText(String.valueOf(a));
-				modl_no2.setText(String.valueOf(b));
-				serialNo2.setText(String.valueOf(c));
+				serialNo2.setText(String.valueOf(b));
+				modl_no2.setText(String.valueOf(c));
 				enter_size2.setText(String.valueOf(d+" "+f));
 			}
 
@@ -146,8 +148,8 @@ public class gui_barcode {
 	private static void infowriter() {
 		FileWriter writer;
 		try {
-			
-			writer = new FileWriter("hard_drive.csv", true); //add your own path here
+
+			writer = new FileWriter("C:/Users/mnasir3/eclipse-workspace/hello_java/src/src/hardrive.csv", true);
 			BufferedWriter buffer = new BufferedWriter(writer);  
 			buffer.write(a+", ");
 			buffer.write(b+", ");
@@ -156,7 +158,7 @@ public class gui_barcode {
 			buffer.newLine();
 			buffer.close();
 		} catch (IOException e) {
-			System.out.println(e);
+			e.printStackTrace();
 		} 
 	}
 
