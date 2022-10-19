@@ -10,10 +10,13 @@ root.resizable(False, False)
 
 # For the manufacturer drop down box
 MANUFACTURER_OPTIONS = [
-    "Segate",
+    "Seagate",
     "Western Digital",
     "Sandisk",
-    "Maxtor"
+    "Maxtor",
+    "Conner",
+    "Hitachi",
+    "Deskstar",
 ] 
 
 manu_choice = StringVar()
@@ -41,7 +44,7 @@ how_much.place(x=45, y=100)
 
 
 # For the different storage sizes
-SIZES = ["GB", "MB"]
+SIZES = ["GB", "MB", "TB"]
 
 size_choice = StringVar()
 size_choice.set(SIZES[0])
@@ -58,8 +61,8 @@ def store():
     mdl = model_no.get()
 
     with open (sys.argv[1], "a") as file:
-        writer = csv.DictWriter (file, fieldnames=["Manufacturer Name", "S/N", "MDL", "SIZE"])
-        writer.writerow({"Manufacturer Name":name, "S/N":s_n, "MDL":mdl, "SIZE":f"{size_value}{size}"}) 
+        writer = csv.DictWriter (file, fieldnames=["Manufacturer Name", "MDL", "S/N", "SIZE"])
+        writer.writerow({"Manufacturer Name":name, "MDL":mdl, "S/N":s_n, "SIZE":f"{size_value}{size}"}) 
 
 
 def clear():
