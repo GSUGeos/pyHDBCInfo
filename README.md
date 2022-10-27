@@ -6,6 +6,7 @@ Python Documentation:
 - To start the program, go inside the python folder and run "python barcode_scanner.py name_of_csv.csv"
 - You need to replace "name_of_csv" with the csv name that you want to store your files into.
 - After adding/scanning all information needed, click 'Save' to save the data in the csv and then 'Next' to save more data.
+- Relaunching the program using the same csv will append the new data along with pre exiesting data.
 
 Java Documentation:
 - To run the program, open the barcode_scanner.java file.
