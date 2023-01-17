@@ -147,7 +147,7 @@ public class gui_barcode {
 		FileWriter writer;
 		try {
 
-			writer = new FileWriter("hard_drive.csv", true); //you can specify your own path here
+			writer = new FileWriter("hard_drive.csv", true); //you can specify your own path and file name here
 			BufferedWriter buffer = new BufferedWriter(writer);  
 			buffer.write(a+", ");
 			buffer.write(b+", ");
